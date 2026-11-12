@@ -1,0 +1,8 @@
+$TTL 604800
+@     IN SOA srv1.${DOMAIN}. root.${DOMAIN}. (
+            2026111201 604800 86400 2419200 604800 )
+      IN NS  srv1.${DOMAIN}.
+      IN NS  srv2.${DOMAIN}.
+${NS1_HOST}   IN PTR srv1.${DOMAIN}.
+${NS2_HOST}   IN PTR srv2.${DOMAIN}.
+${HOLE_HOST}  IN PTR srv3.${DOMAIN}.
